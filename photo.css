@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    overflow: hidden;
+    /* background-color: #333; */
+    
+}
+.navbar a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 2em;
+    display: none;
+}
+.navbar a:hover {
+    
+    color: black;
+}
+.navbar a.icon {
+    float: right;
+    display: block;
+}
+.responsive {
+    position: relative;
+    background-color: #333;
+   
+}
+.responsive a {
+    display: block;
+    color: white;
+}
+.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.responsive a.icon > .icon-bar {
+    display: none;
+}
+.navbar a.icon > .icon-times {
+    display: none;
+}
+.responsive a.icon > .icon-times {
+    display: block;
+}
+
+/* heading-header */
+.heading-header {
+    text-align: center;
+    color: #333;
+    font-family: sans-serif;
+    padding: 2em 0;
+    width: 100%;
+}
+.heading-header h1 {
+    padding: 2rem 0 0 0;
+}
+.heading-header p {
+    padding: 1rem 0;
+    font-weight: bold;
+}
+.heading-header button {
+    padding: .7em  1.5em;
+    background-color: #333;
+    color: white;
+    border: none;
+    font-size: 1.2em;
+}
+.heading-header button:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+/* grid-image-layout */
+.aside-1 {grid-area: "aside-1";}
+.aside-2 {grid-area: "aside-2";}
+.aside-3 {grid-area: "aside-3";}
+
+.heading {
+    display: grid;
+    
+}
+.heading img {
+    display: block;
+}
+
+.heading-grid img {
+    padding: 1em .5em 0 .5em;
+}
+.heading-grid .aside-1, .aside-3 {
+    padding: 0 .5em;
+}
+.footer {
+    background-color: rgb(21, 99, 102);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+.footer p {
+    padding: 1em;
+}
+.footer a {
+    text-decoration: none;
+    font-size: 1.4em;
+    color: white;
+}
+.footer a:hover {
+    background-color: green;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 600px) {
+    .heading {
+        display: grid;
+        grid-template-areas: 
+        'aside-1 aside-2 aside-3';
+    }
+}
+ 
